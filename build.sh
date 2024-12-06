@@ -222,12 +222,9 @@ fi
 
 scripts/config --file out/.config \
     --set-str STATIC_USERMODEHELPER_PATH /system/bin/micd \
-    -e ARM_ARCH_TIMER_VCT_ACCESS \
-    -e F2FS_UNFAIR_RWSEM	\
     -e PERF_CRITICAL_RT_TASK	\
     -e SF_BINDER		\
     -e OVERLAY_FS		\
-    -d UNICODE				\
     -d DEBUG_FS \
     -e MIGT \
     -e MIGT_ENERGY_MODEL \
@@ -237,10 +234,8 @@ scripts/config --file out/.config \
     -e KPERFEVENTS \
     -e MILLET \
     -e PERF_HUMANTASK \
-    -d OSSFOD \
     -d LTO_CLANG \
     -d LOCALVERSION_AUTO \
-    -d TOUCHSCREEN_COMMON \
     -e SF_BINDER \
     -e XIAOMI_MIUI \
     -d MI_MEMORY_SYSFS \
