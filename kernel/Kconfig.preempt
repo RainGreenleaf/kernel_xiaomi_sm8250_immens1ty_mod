@@ -58,3 +58,10 @@ endchoice
 
 config PREEMPT_COUNT
        bool
+
+config RE_KERNEL 
+       tristate "Application Freeze Communication and Status Feedback" 
+       help 
+       This option enables the Application Freeze Communication 
+       feature, which allows for freezing applications and providing feedback on their status. 
+       If unsure, say N.
